@@ -67,10 +67,13 @@ public class Unit {
         return this.position;
     }
 
+    public Unit getTarget(Unit target) {
+        return target;
+    }
     public void attack(Unit target) {
 
         //타겟의 hp가 0이하라면 사망했다는 문구 출력
-        if(target.hp == 0) {
+        if(target.hp <= 0) {
             System.out.println(target.name + "이 사망하였습니다.");
         } else {
             System.out.println(this.name + "이" + target.name + "을 공격했습니다.");

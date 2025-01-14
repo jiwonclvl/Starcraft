@@ -28,15 +28,14 @@ public class Main {
         }
 
         //공격하기
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-        marine.attack(Zealot);
-
-
+        Unit target = marine.getTarget(Zealot);
+        marine.attack(target);
+        marine.attack(target);
+        marine.attack(target);
+        marine.attack(target);
+        marine.attack(target);
+        marine.attack(target);
+        marine.attack(target);
 
         // 위에꺼 끝내면 -> 상속 다형성을 통해 Unit을 상속 받아 Terran, Zerg, ...  등 setting하면 된다.
     }
